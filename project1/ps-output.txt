@@ -1,0 +1,185 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 10:09 ?        00:00:00 /sbin/init splash
+root           2       0  0 10:09 ?        00:00:00 [kthreadd]
+root           3       2  0 10:09 ?        00:00:00 [rcu_gp]
+root           4       2  0 10:09 ?        00:00:00 [rcu_par_gp]
+root           6       2  0 10:09 ?        00:00:00 [kworker/0:0H-events_highpri]
+root           7       2  0 10:09 ?        00:00:00 [kworker/0:1-cgroup_destroy]
+root           8       2  0 10:09 ?        00:00:00 [kworker/u2:0-events_power_efficient]
+root           9       2  0 10:09 ?        00:00:00 [mm_percpu_wq]
+root          10       2  0 10:09 ?        00:00:00 [rcu_tasks_rude_]
+root          11       2  0 10:09 ?        00:00:00 [rcu_tasks_trace]
+root          12       2  0 10:09 ?        00:00:00 [ksoftirqd/0]
+root          13       2  0 10:09 ?        00:00:00 [rcu_sched]
+root          14       2  0 10:09 ?        00:00:00 [migration/0]
+root          15       2  0 10:09 ?        00:00:00 [idle_inject/0]
+root          16       2  0 10:09 ?        00:00:00 [cpuhp/0]
+root          17       2  0 10:09 ?        00:00:00 [kdevtmpfs]
+root          18       2  0 10:09 ?        00:00:00 [netns]
+root          19       2  0 10:09 ?        00:00:00 [inet_frag_wq]
+root          20       2  0 10:09 ?        00:00:00 [kauditd]
+root          21       2  0 10:09 ?        00:00:00 [khungtaskd]
+root          22       2  0 10:09 ?        00:00:00 [oom_reaper]
+root          23       2  0 10:09 ?        00:00:00 [writeback]
+root          24       2  0 10:09 ?        00:00:00 [kcompactd0]
+root          25       2  0 10:09 ?        00:00:00 [ksmd]
+root          26       2  0 10:09 ?        00:00:00 [khugepaged]
+root          72       2  0 10:09 ?        00:00:00 [kintegrityd]
+root          73       2  0 10:09 ?        00:00:00 [kblockd]
+root          74       2  0 10:09 ?        00:00:00 [blkcg_punt_bio]
+root          75       2  0 10:09 ?        00:00:00 [tpm_dev_wq]
+root          76       2  0 10:09 ?        00:00:00 [ata_sff]
+root          77       2  0 10:09 ?        00:00:00 [md]
+root          78       2  0 10:09 ?        00:00:00 [edac-poller]
+root          79       2  0 10:09 ?        00:00:00 [devfreq_wq]
+root          80       2  0 10:09 ?        00:00:00 [watchdogd]
+root          81       2  0 10:09 ?        00:00:00 [kworker/u2:1-ext4-rsv-conversion]
+root          82       2  0 10:09 ?        00:00:00 [kworker/0:1H-kblockd]
+root          84       2  0 10:09 ?        00:00:01 [kswapd0]
+root          85       2  0 10:09 ?        00:00:00 [ecryptfs-kthrea]
+root          87       2  0 10:09 ?        00:00:00 [kthrotld]
+root          88       2  0 10:09 ?        00:00:00 [acpi_thermal_pm]
+root          89       2  0 10:09 ?        00:00:00 [kworker/u2:2-events_unbound]
+root          90       2  0 10:09 ?        00:00:00 [scsi_eh_0]
+root          91       2  0 10:09 ?        00:00:00 [scsi_tmf_0]
+root          92       2  0 10:09 ?        00:00:00 [scsi_eh_1]
+root          93       2  0 10:09 ?        00:00:00 [scsi_tmf_1]
+root          94       2  0 10:09 ?        00:00:00 [vfio-irqfd-clea]
+root          95       2  0 10:09 ?        00:00:00 [ipv6_addrconf]
+root         105       2  0 10:09 ?        00:00:00 [kstrp]
+root         108       2  0 10:09 ?        00:00:00 [zswap-shrink]
+root         109       2  0 10:09 ?        00:00:00 [kworker/u3:0]
+root         114       2  0 10:09 ?        00:00:00 [charger_manager]
+root         150       2  0 10:09 ?        00:00:00 [scsi_eh_2]
+root         152       2  0 10:09 ?        00:00:00 [scsi_tmf_2]
+root         173       2  0 10:09 ?        00:00:00 [jbd2/sda5-8]
+root         174       2  0 10:09 ?        00:00:00 [ext4-rsv-conver]
+root         213       1  0 10:09 ?        00:00:00 /lib/systemd/systemd-journald
+root         235       1  0 10:09 ?        00:00:00 /lib/systemd/systemd-udevd
+root         236       2  0 10:09 ?        00:00:00 [irq/18-vmwgfx]
+root         238       2  0 10:09 ?        00:00:00 [ttm_swap]
+root         239       2  0 10:09 ?        00:00:00 [card0-crtc0]
+root         240       2  0 10:09 ?        00:00:00 [card0-crtc1]
+root         241       2  0 10:09 ?        00:00:00 [card0-crtc2]
+root         242       2  0 10:09 ?        00:00:00 [card0-crtc3]
+root         243       2  0 10:09 ?        00:00:00 [card0-crtc4]
+root         244       2  0 10:09 ?        00:00:00 [card0-crtc5]
+root         245       2  0 10:09 ?        00:00:00 [card0-crtc6]
+root         246       2  0 10:09 ?        00:00:00 [card0-crtc7]
+root         266       2  0 10:09 ?        00:00:00 [loop0]
+root         268       2  0 10:09 ?        00:00:00 [loop1]
+root         270       2  0 10:09 ?        00:00:00 [loop2]
+root         271       2  0 10:09 ?        00:00:00 [loop3]
+root         273       2  0 10:09 ?        00:00:00 [loop4]
+root         299       2  0 10:09 ?        00:00:00 [cryptd]
+systemd+     476       1  0 10:09 ?        00:00:00 /lib/systemd/systemd-resolved
+systemd+     477       1  0 10:09 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root         507       1  0 10:09 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root         508       1  0 10:09 ?        00:00:00 /usr/sbin/acpid
+root         509       1  0 10:09 ?        00:00:00 /usr/sbin/anacron -d -q -s
+avahi        511       1  0 10:09 ?        00:00:00 avahi-daemon: running [danielsusman-VirtualBox.local]
+root         513       1  0 10:09 ?        00:00:00 /usr/sbin/cron -f
+root         515       1  0 10:09 ?        00:00:00 /usr/sbin/cupsd -l
+message+     518       1  0 10:09 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         519       1  0 10:09 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root         532       1  0 10:09 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         536       1  0 10:09 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+syslog       540       1  0 10:09 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         546       1  0 10:09 ?        00:00:01 /usr/lib/snapd/snapd
+root         547       1  0 10:09 ?        00:00:00 /usr/libexec/switcheroo-control
+root         551       1  0 10:09 ?        00:00:00 /lib/systemd/systemd-logind
+root         553       1  0 10:09 ?        00:00:00 /usr/lib/udisks2/udisksd
+root         560       1  0 10:09 ?        00:00:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+avahi        576     511  0 10:09 ?        00:00:00 avahi-daemon: chroot helper
+lp           592     515  0 10:09 ?        00:00:00 /usr/lib/cups/notifier/dbus dbus://
+root         595       1  0 10:09 ?        00:00:00 /usr/sbin/cups-browsed
+root         613       1  0 10:09 ?        00:00:00 /usr/sbin/ModemManager --filter-policy=strict
+root         623       1  0 10:09 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie     647       1  0 10:09 ?        00:00:00 /usr/bin/whoopsie -f
+root         648       2  0 10:09 ?        00:00:00 [kworker/0:5-events]
+kernoops     654       1  0 10:09 ?        00:00:00 /usr/sbin/kerneloops --test
+kernoops     656       1  0 10:09 ?        00:00:00 /usr/sbin/kerneloops
+root         853       1  0 10:09 ?        00:00:00 /usr/sbin/gdm3
+root         862       1  0 10:09 ?        00:00:00 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+root         871     853  0 10:09 ?        00:00:00 gdm-session-worker [pam/gdm-autologin]
+daniels+     876       1  0 10:09 ?        00:00:00 /lib/systemd/systemd --user
+daniels+     877     876  0 10:09 ?        00:00:00 (sd-pam)
+daniels+     882     876  0 10:09 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+daniels+     885     876  0 10:09 ?        00:00:00 /usr/libexec/tracker-miner-fs
+daniels+     887       1  0 10:09 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+daniels+     891     871  0 10:09 tty2     00:00:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+daniels+     893     891  0 10:09 tty2     00:00:03 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+daniels+     895     876  0 10:09 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+daniels+     899     876  0 10:09 ?        00:00:00 /usr/libexec/gvfsd
+rtkit        903       1  0 10:09 ?        00:00:00 /usr/libexec/rtkit-daemon
+daniels+     907     876  0 10:09 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+daniels+     910     876  0 10:09 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+daniels+     933     876  0 10:09 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+daniels+     937     876  0 10:09 ?        00:00:00 /usr/libexec/goa-daemon
+daniels+     952     876  0 10:09 ?        00:00:00 /usr/libexec/goa-identity-service
+daniels+     954     876  0 10:09 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+daniels+     960     876  0 10:09 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+daniels+     964     876  0 10:09 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+root         971       1  0 10:09 ?        00:00:00 /usr/lib/upower/upowerd
+daniels+     985     891  0 10:09 tty2     00:00:00 /usr/libexec/gnome-session-binary --systemd --systemd --session=ubuntu
+daniels+    1065       1  0 10:09 ?        00:00:00 /usr/bin/VBoxClient --clipboard
+daniels+    1066    1065  0 10:09 ?        00:00:00 /usr/bin/VBoxClient --clipboard
+daniels+    1077       1  0 10:09 ?        00:00:00 /usr/bin/VBoxClient --seamless
+daniels+    1078    1077  0 10:09 ?        00:00:00 /usr/bin/VBoxClient --seamless
+daniels+    1084       1  0 10:09 ?        00:00:00 /usr/bin/VBoxClient --draganddrop
+daniels+    1085    1084  0 10:09 ?        00:00:01 /usr/bin/VBoxClient --draganddrop
+daniels+    1092       1  0 10:09 ?        00:00:00 /usr/bin/VBoxClient --vmsvga
+daniels+    1093    1092  0 10:09 ?        00:00:00 /usr/bin/VBoxClient --vmsvga
+daniels+    1099     985  0 10:09 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+daniels+    1123     876  0 10:09 ?        00:00:00 /usr/libexec/at-spi-bus-launcher
+daniels+    1129    1123  0 10:09 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+daniels+    1142     876  0 10:09 ?        00:00:00 /usr/libexec/gnome-session-ctl --monitor
+daniels+    1148     876  0 10:09 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+daniels+    1163     876  2 10:09 ?        00:00:08 /usr/bin/gnome-shell
+daniels+    1186    1163  0 10:09 ?        00:00:00 ibus-daemon --panel disable --xim
+daniels+    1190    1186  0 10:09 ?        00:00:00 /usr/libexec/ibus-dconf
+daniels+    1191    1186  0 10:09 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
+daniels+    1195     876  0 10:09 ?        00:00:00 /usr/libexec/ibus-x11 --kill-daemon
+daniels+    1198     876  0 10:09 ?        00:00:00 /usr/libexec/ibus-portal
+daniels+    1209     876  0 10:09 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+daniels+    1213     876  0 10:09 ?        00:00:00 /usr/libexec/xdg-permission-store
+daniels+    1218     876  0 10:09 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+daniels+    1224     876  0 10:09 ?        00:00:00 /usr/libexec/evolution-source-registry
+daniels+    1234     876  0 10:09 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+daniels+    1242     876  0 10:09 ?        00:00:00 /usr/libexec/dconf-service
+daniels+    1247     876  0 10:09 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+root        1265       1  0 10:09 ?        00:00:01 /usr/lib/packagekit/packagekitd
+daniels+    1275     899  0 10:09 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.3 /org/gtk/gvfs/exec_spaw/0
+daniels+    1276     876  0 10:09 ?        00:00:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+daniels+    1291     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+daniels+    1293     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-color
+daniels+    1295     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-datetime
+daniels+    1297     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-housekeeping
+daniels+    1298     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-keyboard
+daniels+    1301     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-media-keys
+daniels+    1306     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-power
+daniels+    1307     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-print-notifications
+daniels+    1312     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-rfkill
+daniels+    1314     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+daniels+    1318     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-sharing
+daniels+    1329     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-smartcard
+daniels+    1331     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-sound
+daniels+    1334     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-usb-protection
+daniels+    1335    1148  0 10:09 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+daniels+    1340     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-wacom
+daniels+    1344     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-wwan
+daniels+    1346     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-xsettings
+daniels+    1354    1148  0 10:09 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+daniels+    1387     876  0 10:09 ?        00:00:00 /usr/libexec/gsd-printer
+colord      1399       1  0 10:09 ?        00:00:00 /usr/libexec/colord
+daniels+    1466    1186  0 10:09 ?        00:00:00 /usr/libexec/ibus-engine-simple
+daniels+    1472     876  0 10:09 ?        00:00:02 /snap/snap-store/547/usr/bin/snap-store --gapplication-service
+daniels+    1486     876  0 10:09 ?        00:00:00 /usr/libexec/xdg-document-portal
+daniels+    1581     876  0 10:09 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+daniels+    1585     876  0 10:09 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+root        1597       1  0 10:09 ?        00:00:00 /usr/libexec/fwupd/fwupd
+daniels+    1929     876  0 10:10 ?        00:00:00 /usr/libexec/gvfsd-metadata
+daniels+    1934    1148  0 10:10 ?        00:00:00 update-notifier
+daniels+    2000     876  0 10:11 ?        00:00:01 /usr/libexec/gnome-terminal-server
+daniels+    2008    2000  0 10:11 pts/0    00:00:00 bash
+daniels+    3298    2008  0 10:16 pts/0    00:00:00 ps -ef
