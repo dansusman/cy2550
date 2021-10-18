@@ -25,7 +25,6 @@ class PasswordGenerator:
     words = None
     password = None
     specials = None
-    valid_indices = None
 
     def __init__(self):
         """Initializes a new PasswordGenerator to build passwords using the
@@ -37,8 +36,6 @@ class PasswordGenerator:
         self.password = ""
         # Choices for special characters
         self.specials = ["~", "!", "@", "#", "$", "%", "^", "&", "*", ".", ":", ";"]
-        # Options for indices at which to insert numbers/special characters
-        self.valid_indices = [0]
 
     def password_gen(self):
         """Generates a secure, memorable password using the XKCD method. Prints
@@ -46,10 +43,10 @@ class PasswordGenerator:
         """
         # generate and capitalize random words; add to global words list
         self.capitalize_words()
+        # insert specials and numbers into password word choices
+        self.increase_complexity()
         # randomly place words in password string
         self.randomize_order()
-        # insert specials and numbers into password
-        self.increase_complexity()
         # print result password
         print(self.password)
 
@@ -65,6 +62,19 @@ class PasswordGenerator:
             else:
                 self.words.append(self.gen_random_word())
 
+    def increase_complexity(self):
+        """Increases the complexity of the global password string by inserting
+        symbols and numbers to the beginnings/ends of the words in word list.
+        """
+        while args.symbols > 0:
+            special = random.choice(self.specials)
+            self.update_words(special)
+            args.symbols = args.symbols - 1
+        while args.numbers > 0:
+            num = random.randint(0, 9)
+            self.update_words(str(num))
+            args.numbers = args.numbers - 1
+
     def gen_random_word(self):
         """Grabs a random word from the words.txt file, and returns it to
         be used in the random password generation.
@@ -79,7 +89,7 @@ class PasswordGenerator:
             random_w = random.choice(self.words)
             self.words.remove(random_w)
             self.password += random_w
-            self.valid_indices.append(len(self.password))
+            print(random_w)
 
     def load_words(self):
         """Loads all words from the words.txt file (JSON representation)."""
@@ -87,23 +97,20 @@ class PasswordGenerator:
         json_data = json.load(file)
         return list(json_data.keys())
 
-    def increase_complexity(self):
-        """Increases the complexity of the global password string by inserting
-        symbols and numbers at random indices in the password.
-        """
-        while args.symbols > 0:
-            special = random.choice(self.specials)
-            self.password = self.insert_new_word(self.password, special)
-            args.symbols = args.symbols - 1
-        while args.numbers > 0:
-            num = random.randint(0, 9)
-            self.password = self.insert_new_word(self.password, str(num))
-            args.numbers = args.numbers - 1
 
-    def insert_new_word(self, string, new_word):
-        """Adds the word 'new_word' at a random place in the given string 'string'."""
-        random_idx = random.choice(self.valid_indices)
-        return string[0:random_idx] + new_word + string[random_idx:]
+    def update_words(self, special):
+        """Updates the word list by adding the given special character or number
+        to the beginning or end of a random word in the word list.
+        """
+        rand_word_idx = random.randint(0, len(self.words)-1)
+        rand_word = self.words[rand_word_idx]
+        options = [0, 1]
+        rand_idx = random.choice(options)
+        if rand_idx == 0:
+            self.words[rand_word_idx] = special + rand_word
+        else:
+            self.words[rand_word_idx] = rand_word + special
+
 
 if __name__ == '__main__':
     generator = PasswordGenerator()
