@@ -79,7 +79,7 @@ class PasswordGenerator:
             random_w = random.choice(self.words)
             self.words.remove(random_w)
             self.password += random_w
-            self.valid_indices.append(len(self.password)-1)
+            self.valid_indices.append(len(self.password))
 
     def load_words(self):
         """Loads all words from the words.txt file (JSON representation)."""
