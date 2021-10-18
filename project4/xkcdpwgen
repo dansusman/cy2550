@@ -89,7 +89,6 @@ class PasswordGenerator:
             random_w = random.choice(self.words)
             self.words.remove(random_w)
             self.password += random_w
-            print(random_w)
 
     def load_words(self):
         """Loads all words from the words.txt file (JSON representation)."""
