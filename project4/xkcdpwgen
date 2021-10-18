@@ -92,9 +92,10 @@ class PasswordGenerator:
 
     def load_words(self):
         """Loads all words from the words.txt file (JSON representation)."""
-        file = open("words.txt")
-        json_data = json.load(file)
-        return list(json_data.keys())
+        lines = []
+        with open('words.txt') as f:
+            lines = [line.rstrip() for line in f]
+        return lines
 
 
     def update_words(self, special):
