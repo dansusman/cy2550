@@ -1,0 +1,110 @@
+#!/usr/bin/env python3
+import argparse
+import json
+import random
+
+# Command Line Arguments Parsing (Optional options to supply)
+parser = argparse.ArgumentParser(
+        description="Generate a secure, memorable password using the XKCD method")
+# Specify number of words in password
+parser.add_argument("-w", "--words", type=int, default=4,
+    help="include WORDS words in the password (default=4)")
+# Specify number of capital first letters
+parser.add_argument("-c", "--caps", type=int, default=0,
+    help="capitalize the first letter of CAPS random words (default=0)")
+# Specify number of random numbers in password
+parser.add_argument("-n", "--numbers", type=int, default=0,
+        help="insert NUMBERS random numbers in the password (default=0)")
+# Specify number of symbols to include in password
+parser.add_argument("-s", "--symbols", type=int, default=0,
+        help="insert SYMBOLS random symbols in the password (default=0)")
+# Capture and save any inputs to optional params
+args = parser.parse_args()
+
+class PasswordGenerator:
+    words = None
+    password = None
+    specials = None
+    valid_indices = None
+
+    def __init__(self):
+        """Initializes a new PasswordGenerator to build passwords using the
+        XKCD password method.
+        """
+        # Initialize list of words to be added to XKCD password
+        self.words = []
+        # Initialize password to empty string
+        self.password = ""
+        # Choices for special characters
+        self.specials = ["~", "!", "@", "#", "$", "%", "^", "&", "*", ".", ":", ";"]
+        # Options for indices at which to insert numbers/special characters
+        self.valid_indices = [0]
+
+    def password_gen(self):
+        """Generates a secure, memorable password using the XKCD method. Prints
+        the password to the console.
+        """
+        # generate and capitalize random words; add to global words list
+        self.capitalize_words()
+        # randomly place words in password string
+        self.randomize_order()
+        # insert specials and numbers into password
+        self.increase_complexity()
+        # print result password
+        print(self.password)
+
+    def capitalize_words(self):
+        """Capitalizes the first letter of the first CAPS words based on
+        the value for CAPS passed in through command line.
+        """
+        for i in range(0, args.words):
+            # capitalize first letter until number of caps is used up
+            if (args.caps > 0):
+                self.words.append(self.gen_random_word().capitalize())
+                args.caps -= 1
+            else:
+                self.words.append(self.gen_random_word())
+
+    def gen_random_word(self):
+        """Grabs a random word from the words.txt file, and returns it to
+        be used in the random password generation.
+        """
+        return random.choice(self.load_words())
+        
+    def randomize_order(self):
+        """Adds words from global word list to the password string in a
+        random order.
+        """
+        for i in range(0, args.words):
+            random_w = random.choice(self.words)
+            self.words.remove(random_w)
+            self.password += random_w
+            self.valid_indices.append(len(self.password)-1)
+
+    def load_words(self):
+        """Loads all words from the words.txt file (JSON representation)."""
+        file = open("words.txt")
+        json_data = json.load(file)
+        return list(json_data.keys())
+
+    def increase_complexity(self):
+        """Increases the complexity of the global password string by inserting
+        symbols and numbers at random indices in the password.
+        """
+        while args.symbols > 0:
+            special = random.choice(self.specials)
+            self.password = self.insert_new_word(self.password, special)
+            args.symbols = args.symbols - 1
+        while args.numbers > 0:
+            num = random.randint(0, 9)
+            self.password = self.insert_new_word(self.password, str(num))
+            args.numbers = args.numbers - 1
+
+    def insert_new_word(self, string, new_word):
+        """Adds the word 'new_word' at a random place in the given string 'string'."""
+        random_idx = random.choice(self.valid_indices)
+        return string[0:random_idx] + new_word + string[random_idx:]
+
+if __name__ == '__main__':
+    generator = PasswordGenerator()
+    generator.password_gen()
