@@ -1,0 +1,11 @@
+chown root:root /var/log/apt
+chmod 620 /dev/console
+chown root:tty /dev/tty
+chmod 644 /home/alice/.profile
+chmod 755 /usr/bin/bash
+chmod 755 /usr/bin/ls
+chmod 664 /etc/fstab
+chmod 664 /etc/apt/sources.list
+chmod 710 /etc/ssl/private
+chmod 664 /var/log/lastlog
+chmod 777 /dev/shm/ && chmod +t /dev/shm
