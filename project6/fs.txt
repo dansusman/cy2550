@@ -6,3 +6,5 @@ chmod 755 /usr/bin/ls
 chmod 664 /var/log/lastlog
 chmod 755 /usr/bin/sha1sum
 chown root:root /var/log/apt
+chmod 775 /var/log
+chown root:syslog /var/log
