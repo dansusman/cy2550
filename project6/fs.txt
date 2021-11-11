@@ -8,3 +8,4 @@ chmod 755 /usr/bin/sha1sum
 chown root:root /var/log/apt
 chmod 775 /var/log
 chmod 555 /sys
+chmod 555 /proc
