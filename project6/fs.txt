@@ -13,5 +13,6 @@ chmod 775 /var/log
 chmod 555 /sys
 chmod 555 /proc
 chown root:root /usr/lib/x86_64-linux-gnu/security
+chmod 755 /usr/lib/x86_64-linux-gnu/security
 chown root:root /usr/lib/x86_64-linux-gnu/libc-2.28.so
 chmod 755 /usr/lib/x86_64-linux-gnu/libc-2.28.so
